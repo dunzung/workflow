@@ -1,0 +1,11 @@
+<div ng-controller="DefVoteTypeCtrl">
+    <select ng-model="property.value"
+            ng-change="processVoteTypeChanged()"
+            ng-disabled="!VoteType.disable"
+            style="width:100%;height:25px">
+        <option value="0">一票否决制</option>
+        <option value="1">一票通过制</option>
+        <option value="2">半数通过制</option>
+        <option value="3">60%通过制</option>
+    </select>
+</div>

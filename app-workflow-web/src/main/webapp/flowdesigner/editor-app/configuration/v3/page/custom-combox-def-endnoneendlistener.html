@@ -1,0 +1,7 @@
+<div ng-controller="DefEndNoneEndListenerCtrl">
+    <select ng-model="property.value"
+            ng-change="processStartNoneStartListenerChanged()"
+            ng-options="ln.className as ln.realName for ln in endListeners"
+            style="width:100%;height:25px">
+    </select>
+</div>

@@ -1,0 +1,11 @@
+<div ng-controller="DefPopupOrganCtrl">
+    <table width="100%">
+        <tr>
+            <td><input type="text" ng-model="property.value" readonly="readonly" ng-disabled="!organModel.disableInput"/>
+            </td>
+            <td>
+                <button ng-click="popupOrgan()" ng-disabled="!organModel.disableInput">选择</button>
+            </td>
+        </tr>
+    </table>
+</div>

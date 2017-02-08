@@ -1,0 +1,13 @@
+<div ng-controller="DefReflectTypeCtrl">
+    <select ng-model="property.value"
+            ng-change="processReflectTypeChanged()"
+            style="width:100%;height:25px">
+        <option value="1">提交人</option>
+        <option value="2">提交人所在机构某角色</option>
+        <option value="3">角色</option>
+        <option value="4">某机构某角色</option>
+        <option value="5">指定用户</option>
+        <option value="6">提交上级机构的某角色</option>
+        <option value="7">提交所在机构角色或上级机构某角色</option>
+    </select>
+</div>

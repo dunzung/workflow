@@ -1,0 +1,12 @@
+<div ng-controller="DefPopupRoleCtrl">
+    <table width="100%">
+        <tr>
+            <td>
+                <input type="text" ng-model="property.value" readonly="readonly" ng-disabled="!roleModel.disableInput"/>
+            </td>
+            <td>
+                <button ng-click="popupRole()" ng-disabled="!roleModel.disableInput">选择</button>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,9 @@
+<div ng-controller="DefBackRuleCtrl">
+    <select ng-model="property.value"
+            ng-change="processBackRuleChanged()"
+            ng-disabled="BackRule.disable"
+            style="width:100%;height:25px">
+        <option value="0">回退给原办理人</option>
+        <option value="1">回退原映射所有审批人</option>
+    </select>
+</div>

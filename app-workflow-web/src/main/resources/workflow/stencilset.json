@@ -1,0 +1,1060 @@
+{
+  "title" : "流程模型设计器",
+  "namespace" : "http://b3mn.org/stencilset/bpmn2.0#",
+  "description" : "BPMN模型设计器",
+  "propertyPackages" : [{
+      "name" : "custom_combox_def_taskstartlistener_package",
+      "properties" : [{
+        "id" : "task_start_listener",
+        "type" : "custom-combox-def-taskstartlistener",
+        "title" : "开始事件",
+        "value" : "",
+        "description" : "开始事件",
+        "popular" : true,
+        "refToView" : "combox_taskstartlistener"
+      }]
+    },{
+    "name" : "custom_combox_def_taskendlistener_package",
+    "properties" : [{
+        "id" : "task_end_listener",
+        "type" : "custom-combox-def-taskendlistener",
+        "title" : "结束事件",
+        "value" : "",
+        "description" : "结束事件",
+        "popular" : true,
+        "refToView" : "combox_taskendlistener"
+      }]
+  },{
+    "name" : "custom_combox_def_votetype_package",
+    "properties" : [{
+        "id" : "votetype",
+        "type" : "custom-combox-def-votetype",
+        "title" : "投票规则",
+        "value" : "0",
+        "description" : "投票规则",
+        "popular" : true,
+        "refToView" : "combox_votetype"
+      }]
+  },{
+    "name" : "custom_combox_def_gatewaystartlistener_package",
+    "properties" : [{
+        "id" : "gateway_start_listener",
+        "type" : "custom-combox-def-gatewaystartlistener",
+        "title" : "开始事件",
+        "value" : "",
+        "description" : "开始事件",
+        "popular" : true,
+        "refToView" : "combox_gatewaystartlistener"
+      }]
+  },{
+      "name" : "custom_combox_def_gatewayendlistener_package",
+      "properties" : [{
+          "id" : "gateway_end_listener",
+          "type" : "custom-combox-def-gatewayendlistener",
+          "title" : "结束事件",
+          "value" : "",
+          "description" : "结束事件",
+          "popular" : true,
+          "refToView" : "combox_gatewaystartlistener"
+        }]
+   },{
+    "name" : "custom_combox_def_startnonestartlistener_package",
+    "properties" : [{
+      "id" : "startnone_start_listener",
+      "type" : "custom-combox-def-startnonestartlistener",
+      "title" : "开始事件",
+      "value" : "",
+      "description" : "开始事件",
+      "popular" : true,
+      "refToView" : "combox_startnonestartlistener"
+    }]
+  },{
+    "name" : "custom_combox_def_endnoneendlistener_package",
+    "properties" : [{
+      "id" : "endnone_end_listener",
+      "type" : "custom-combox-def-endnonendlistener",
+      "title" : "结束事件",
+      "value" : "",
+      "description" : "结束事件",
+      "popular" : true,
+      "refToView" : "combox_endnoneendlistener"
+    }]
+  },{
+      "name" : "custom_combox_def_signtype_package",
+      "properties" : [{
+         "id" : "multiinstance_type",
+         "type" : "kisbpm-multiinstance",
+         "title" : "是否会签",
+         "value" : "unParallel",
+         "description" : "会签",
+         "popular" : true,
+         "refToView" : "multiinstance"
+       }]
+    },{
+      "name" : "custom_combox_def_sign_assignees_package",
+      "properties" : [ {
+         "id" : "multiinstance_collection",
+         "type" : "custom-text-def-signassignees",
+         "title" : "",
+         "value" : "",
+         "description" : "会签人数",
+         "popular" : true
+       } ]
+    },{
+    "name" : "custom_combox_def_sign_variable_package",
+    "properties" : [ {
+         "id" : "multiinstance_variable",
+         "type" : "custom-text-def-signvariable",
+         "title" : "",
+         "value" : "",
+         "description" : "会签参数",
+         "popular" : true
+       } ]
+    },{
+      "name" : "custom_combox_def_sign_completed_condition_package",
+      "properties" : [ {
+         "id" : "multiinstance_condition",
+         "type" : "custom-text-def-signcompletedcondition",
+         "title" : "",
+         "value" : "",
+         "description" : "会签条件",
+         "popular" : true
+       } ]
+    },{
+    "name" : "custom_combox_def_reflecttype_package",
+    "properties" : [ {
+         "id" : "approvetype",
+         "type" : "custom-combox-def-reflecttype",
+         "title" : "审批类型",
+         "value" : "1",
+         "description" : "审批类型",
+         "popular" : true,
+         "refToView" : "combox_reflectType"
+       } ]
+  },{
+    "name" : "custom_popup_def_organname_package",
+    "properties" : [ {
+         "id" : "approveorganname",
+         "type" : "custom-popup-def-organname",
+         "title" : "机构",
+         "value" : "",
+         "description" : "机构名称",
+         "popular" : true,
+         "refToView" : "popup_organ"
+       } ]
+  },{
+    "name" : "custom_popup_def_organcode_package",
+    "properties" : [ {
+         "id" : "approveorgancode",
+         "type" : "custom-hidden-def-organcode",
+         "title" : "",
+         "value" : "",
+         "hidden" : true,
+         "description" : "机构编码",
+         "popular" : true,
+         "refToView" : "popup_organ"
+       } ]
+  },{
+    "name" : "custom_popup_def_rolename_package",
+    "properties" : [ {
+         "id" : "approverolename",
+         "type" : "custom-popup-def-rolename",
+         "title" : "角色",
+         "value" : "",
+         "description" : "角色名称",
+         "popular" : true,
+         "refToView" : "popup_role"
+       } ]
+  },{
+    "name" : "custom_popup_def_rolecode_package",
+    "properties" : [{
+         "id" : "approverolecode",
+         "type" : "custom-hidden-def-rolecode",
+         "title" : "",
+         "value" : "",
+         "hidden" : true,
+         "description" : "角色编码",
+         "popular" : true,
+         "refToView" : "popup_role"
+       }]
+  },{
+    "name" : "custom_popup_def_username_package",
+    "properties" : [ {
+         "id" : "approveusername",
+         "type" : "custom-popup-def-username",
+         "title" : "用户",
+         "value" : "",
+         "description" : "用户名称",
+         "popular" : true,
+         "refToView" : "popup_user"
+       } ]
+  },{
+    "name" : "custom_popup_def_userid_package",
+    "properties" : [ {
+         "id" : "approveuserid",
+         "type" : "custom-hidden-def-userid",
+         "title" : "",
+         "value" : "",
+         "hidden":true,
+         "description" : "用户ID",
+         "popular" : true,
+         "refToView" : "popup_user"
+       } ]
+  },{
+    "name" : "custom_combox_def_backrule_package",
+    "properties" : [ {
+         "id" : "rollbackrule",
+         "type" : "custom-combox-def-backrule",
+         "title" : "回退规则",
+         "value" : "0",
+         "description" : "回退规则",
+         "popular" : true,
+         "refToView" : "combox_backrule"
+       } ]
+  },{
+    "name" : "custom_combox_def_permitdelegate_package",
+    "properties" : [ {
+         "id" : "consignAble",
+         "type" : "custom-combox-def-permitdelegate",
+         "title" : "允许改派",
+         "value" : "1",
+         "description" : "允许改派",
+         "popular" : true,
+         "refToView" : "combox_permitdelegate"
+       } ]
+  },{
+    "name" : "process_def_idpackage",
+    "properties" : [ {
+       "id" : "process_id",
+       "type" : "custom-text-def-processid",
+       "title" : "流程编号",
+       "value" : "",
+       "description" : "流程编号",
+       "popular" : true
+     } ]
+  },{
+    "name" : "process_def_namepackage",
+    "properties" : [ {
+     "id" : "name",
+     "type" : "custom-text-def-processname",
+     "title" : "流程名称",
+     "value" : "",
+     "description" : "流程名称",
+     "popular" : true
+   } ]
+  },{
+    "name" : "overrideidpackage",
+    "properties" : [ {
+      "id" : "overrideid",
+      "type" : "custom-text-def-attrid",
+      "title" : "编号",
+      "value" : "",
+      "description" : "编号",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "namepackage",
+    "properties" : [ {
+      "id" : "name",
+      "type" : "String",
+      "title" : "名称",
+      "value" : "",
+      "description" : "名称",
+      "popular" : true,
+      "refToView" : "text_name"
+    } ]
+  }, {
+    "name" : "documentationpackage",
+    "properties" : [ {
+      "id" : "documentation",
+      "type" : "Text",
+      "title" : "备注",
+      "value" : "",
+      "description" : "备注",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "process_authorpackage",
+    "properties" : [ {
+      "id" : "process_author",
+      "type" : "String",
+      "title" : "创建人",
+      "value" : "",
+      "description" : "创建人",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "process_versionpackage",
+    "properties" : [ {
+      "id" : "process_version",
+      "type" : "String",
+      "title" : "流程版本",
+      "value" : "",
+      "description" : "流程版本",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "process_namespacepackage",
+    "properties" : [ {
+      "id" : "process_namespace",
+      "type" : "String",
+      "title" : "Target namespace",
+      "value" : "http://www.activiti.org/processdef",
+      "description" : "Target namespace for the process definition.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "asynchronousdefinitionpackage",
+    "properties" : [ {
+      "id" : "asynchronousdefinition",
+      "type" : "Boolean",
+      "title" : "Asynchronous",
+      "value" : "false",
+      "description" : "Define the activity as asynchronous.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "exclusivedefinitionpackage",
+    "properties" : [ {
+      "id" : "exclusivedefinition",
+      "type" : "Boolean",
+      "title" : "Exclusive",
+      "value" : "false",
+      "description" : "Define the activity as exclusive.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "executionlistenerspackage",
+    "properties" : [ {
+      "id" : "executionlisteners",
+      "type" : "multiplecomplex",
+      "title" : "Execution listeners",
+      "value" : "",
+      "description" : "Listeners for an activity, process, sequence flow, start and end event.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "tasklistenerspackage",
+    "properties" : [ {
+      "id" : "tasklisteners",
+      "type" : "multiplecomplex",
+      "title" : "Task listeners",
+      "value" : "",
+      "description" : "Listeners for a user task",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "eventlistenerspackage",
+    "properties" : [ {
+      "id" : "eventlisteners",
+      "type" : "multiplecomplex",
+      "title" : "Event listeners",
+      "value" : "",
+      "description" : "Listeners for any event happening in the Activiti Engine. It's also possible to rethrow the event as a signal, message or error event",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "formpropertiespackage",
+    "properties" : [ {
+      "id" : "formproperties",
+      "type" : "Complex",
+      "title" : "Form properties",
+      "value" : "",
+      "description" : "Definition of the form with a list of form properties",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "formkeydefinitionpackage",
+    "properties" : [ {
+      "id" : "formkeydefinition",
+      "type" : "String",
+      "title" : "Form key",
+      "value" : "",
+      "description" : "Form key that provides a reference to a form.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "duedatedefinitionpackage",
+    "properties" : [ {
+      "id" : "duedatedefinition",
+      "type" : "String",
+      "title" : "Due date",
+      "value" : "",
+      "description" : "Due date of the user task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "prioritydefinitionpackage",
+    "properties" : [ {
+      "id" : "prioritydefinition",
+      "type" : "String",
+      "title" : "Priority",
+      "value" : "",
+      "description" : "Priority of the user task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "duedatedefinitionpackage",
+    "properties" : [ {
+      "id" : "duedatedefinition",
+      "type" : "String",
+      "title" : "Due date",
+      "value" : "",
+      "description" : "Due date of the user task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "servicetaskclasspackage",
+    "properties" : [ {
+      "id" : "servicetaskclass",
+      "type" : "String",
+      "title" : "Class",
+      "value" : "",
+      "description" : "Class that implements the service task logic.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "servicetaskexpressionpackage",
+    "properties" : [ {
+      "id" : "servicetaskexpression",
+      "type" : "String",
+      "title" : "处理器",
+      "value" : "",
+      "description" : "Service task logic defined with an expression.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "servicetaskdelegateexpressionpackage",
+    "properties" : [ {
+      "id" : "servicetaskdelegateexpression",
+      "type" : "String",
+      "title" : "Delegate expression",
+      "value" : "",
+      "description" : "Service task logic defined with a delegate expression.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "servicetaskfieldspackage",
+    "properties" : [ {
+      "id" : "servicetaskfields",
+      "type" : "Complex",
+      "title" : "Class fields",
+      "value" : "",
+      "description" : "Field extensions",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "usertaskassignmentpackage",
+    "properties" : [ {
+       "id" : "usertaskassignment",
+       "type" : "custom-text-def-assignee",
+       "title" : "审批人变量",
+       "value" : "${assignee}",
+       "description" : "审批人变量",
+       "popular" : true
+     } ]
+  },{
+    "name" : "servicetaskresultvariablepackage",
+    "properties" : [ {
+      "id" : "servicetaskresultvariable",
+      "type" : "String",
+      "title" : "Result variable name",
+      "value" : "",
+      "description" : "Process variable name to store the service task result.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "scriptformatpackage",
+    "properties" : [ {
+      "id" : "scriptformat",
+      "type" : "String",
+      "title" : "Script format",
+      "value" : "",
+      "description" : "Script format of the script task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "scripttextpackage",
+    "properties" : [ {
+      "id" : "scripttext",
+      "type" : "Text",
+      "title" : "Script",
+      "value" : "",
+      "description" : "Script text of the script task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "ruletask_rulespackage",
+    "properties" : [ {
+      "id" : "ruletask_rules",
+      "type" : "String",
+      "title" : "Rules",
+      "value" : "",
+      "description" : "Rules of the rule task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "ruletask_variables_inputpackage",
+    "properties" : [ {
+      "id" : "ruletask_variables_input",
+      "type" : "String",
+      "title" : "Input variables",
+      "value" : "",
+      "description" : "Input variables of the rule task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "ruletask_excludepackage",
+    "properties" : [ {
+      "id" : "ruletask_exclude",
+      "type" : "Boolean",
+      "title" : "Exclude",
+      "value" : "false",
+      "description" : "Use the rules property as exclusion.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "ruletask_resultpackage",
+    "properties" : [ {
+      "id" : "ruletask_result",
+      "type" : "String",
+      "title" : "Result variable",
+      "value" : "",
+      "description" : "Result variable of the rule task.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtasktopackage",
+    "properties" : [ {
+      "id" : "mailtaskto",
+      "type" : "Text",
+      "title" : "To",
+      "value" : "",
+      "description" : "The recipients if the e-mail. Multiple recipients are defined in a comma-separated list.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtaskfrompackage",
+    "properties" : [ {
+      "id" : "mailtaskfrom",
+      "type" : "Text",
+      "title" : "From",
+      "value" : "",
+      "description" : "The sender e-mail address. If not provided, the default configured from address is used.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtasksubjectpackage",
+    "properties" : [ {
+      "id" : "mailtasksubject",
+      "type" : "Text",
+      "title" : "Subject",
+      "value" : "",
+      "description" : "The subject of the e-mail.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtaskccpackage",
+    "properties" : [ {
+      "id" : "mailtaskcc",
+      "type" : "Text",
+      "title" : "Cc",
+      "value" : "",
+      "description" : "The cc's of the e-mail. Multiple recipients are defined in a comma-separated list",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtaskbccpackage",
+    "properties" : [ {
+      "id" : "mailtaskbcc",
+      "type" : "Text",
+      "title" : "Bcc",
+      "value" : "",
+      "description" : "The bcc's of the e-mail. Multiple recipients are defined in a comma-separated list",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtasktextpackage",
+    "properties" : [ {
+      "id" : "mailtasktext",
+      "type" : "Text",
+      "title" : "Text",
+      "value" : "",
+      "description" : "The content of the e-mail, in case one needs to send plain none-rich e-mails. Can be used in combination with html, for e-mail clients that don't support rich content. The client will then fall back to this text-only alternative.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtaskhtmlpackage",
+    "properties" : [ {
+      "id" : "mailtaskhtml",
+      "type" : "Text",
+      "title" : "Html",
+      "value" : "",
+      "description" : "A piece of HTML that is the content of the e-mail.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "mailtaskcharsetpackage",
+    "properties" : [ {
+      "id" : "mailtaskcharset",
+      "type" : "String",
+      "title" : "Charset",
+      "value" : "",
+      "description" : "Allows to change the charset of the email, which is necessary for many non-English languages. ",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "callactivitycalledelementpackage",
+    "properties" : [ {
+      "id" : "callactivitycalledelement",
+      "type" : "String",
+      "title" : "Called element",
+      "value" : "",
+      "description" : "Process reference.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "callactivityinparameterspackage",
+    "properties" : [ {
+      "id" : "callactivityinparameters",
+      "type" : "Complex",
+      "title" : "In parameters",
+      "value" : "",
+      "description" : "Definition of the input parameters",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "callactivityoutparameterspackage",
+    "properties" : [ {
+      "id" : "callactivityoutparameters",
+      "type" : "Complex",
+      "title" : "Out parameters",
+      "value" : "",
+      "description" : "Definition of the output parameters",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "cameltaskcamelcontextpackage",
+    "properties" : [ {
+      "id" : "cameltaskcamelcontext",
+      "type" : "String",
+      "title" : "Camel context",
+      "value" : "",
+      "description" : "An optional camel context definition, if left empty the default is used.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "muletaskendpointurlpackage",
+    "properties" : [ {
+      "id" : "muletaskendpointurl",
+      "type" : "String",
+      "title" : "Endpoint url",
+      "value" : "",
+      "description" : "A required endpoint url to sent the message to Mule.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "muletasklanguagepackage",
+    "properties" : [ {
+      "id" : "muletasklanguage",
+      "type" : "String",
+      "title" : "Language",
+      "value" : "",
+      "description" : "A required definition for the language to resolve the payload expression, like juel.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "muletaskpayloadexpressionpackage",
+    "properties" : [ {
+      "id" : "muletaskpayloadexpression",
+      "type" : "String",
+      "title" : "Payload expression",
+      "value" : "",
+      "description" : "A required definition for the payload of the message sent to Mule.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "muletaskresultvariablepackage",
+    "properties" : [ {
+      "id" : "muletaskresultvariable",
+      "type" : "String",
+      "title" : "Result variable",
+      "value" : "",
+      "description" : "An optional result variable for the payload returned.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "conditionsequenceflowpackage",
+    "properties" : [ {
+      "id" : "conditionsequenceflow",
+      "type" : "custom-text-def-sequenceflowcondition",
+      "title" : "流转条件",
+      "value" : "",
+      "description" : "流转条件",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "defaultflowpackage",
+    "properties" : [ {
+      "id" : "defaultflow",
+      "type" : "Boolean",
+      "title" : "",
+      "value" : "false",
+      "description" : "",
+      "popular" : true,
+      "refToView" : "default"
+    } ]
+  }, {
+    "name" : "conditionalflowpackage",
+    "properties" : [ {
+      "id" : "conditionalflow",
+      "type" : "Boolean",
+      "title" : "Conditional flow",
+      "value" : "false",
+      "description" : "Define the sequence flow with a condition",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "timercycledefinitionpackage",
+    "properties" : [ {
+      "id" : "timercycledefinition",
+      "type" : "String",
+      "title" : "Time cycle (e.g. R3/PT10H)",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 cycle.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "timerdatedefinitionpackage",
+    "properties" : [ {
+      "id" : "timerdatedefinition",
+      "type" : "String",
+      "title" : "Time date in ISO-8601",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 date definition.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "timerdurationdefinitionpackage",
+    "properties" : [ {
+      "id" : "timerdurationdefinition",
+      "type" : "String",
+      "title" : "Time duration (e.g. PT5M)",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 duration.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "messagerefpackage",
+    "properties" : [ {
+      "id" : "messageref",
+      "type" : "String",
+      "title" : "Message reference",
+      "value" : "",
+      "description" : "Define the message name.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "signalrefpackage",
+    "properties" : [ {
+      "id" : "signalref",
+      "type" : "String",
+      "title" : "Signal reference",
+      "value" : "",
+      "description" : "Define the signal name.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "errorrefpackage",
+    "properties" : [ {
+      "id" : "errorref",
+      "type" : "String",
+      "title" : "Error reference",
+      "value" : "",
+      "description" : "Define the error name.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "cancelactivitypackage",
+    "properties" : [ {
+      "id" : "cancelactivity",
+      "type" : "Boolean",
+      "title" : "Cancel activity",
+      "value" : "true",
+      "description" : "Should the activity be cancelled",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "initiatorpackage",
+    "properties" : [ {
+      "id" : "initiator",
+      "type" : "String",
+      "title" : "Initiator",
+      "value" : "",
+      "description" : "Initiator of the process.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "textpackage",
+    "properties" : [ {
+      "id" : "text",
+      "type" : "String",
+      "title" : "Text",
+      "value" : "",
+      "description" : "The text of the text annotation.",
+      "popular" : true,
+      "refToView" : "text"
+    } ]
+  }, {
+    "name" : "isforcompensationpackage",
+    "properties" : [ {
+      "id" : "isforcompensation",
+      "type" : "Boolean",
+      "title" : "Is for compensation",
+      "value" : "false",
+      "description" : "A flag that identifies whether this activity is intended for the purposes of compensation.",
+      "popular" : true,
+      "refToView" : "compensation"
+    } ]
+  }, {
+    "name" : "sequencefloworderpackage",
+    "properties" : [ {
+      "id" : "sequencefloworder",
+      "type" : "Complex",
+      "title" : "Flow order",
+      "value" : "",
+      "description" : "Order outgoing sequence flows.",
+      "popular" : true
+    } ]
+  } ],
+  "stencils" : [ {
+    "type" : "node",
+    "id" : "BPMNDiagram",
+    "title" : "BPMN-Diagram",
+    "description" : "A BPMN 2.0 diagram.",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns:oryx=\"http://www.b3mn.org/oryx\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n   width=\"800\"\n   height=\"600\"\n   version=\"1.0\">\n  <defs></defs>\n  <g pointer-events=\"fill\" >\n    <polygon stroke=\"black\" fill=\"black\" stroke-width=\"1\" points=\"0,0 0,590 9,599 799,599 799,9 790,0\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" />\n    <rect id=\"diagramcanvas\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"790\" height=\"590\" stroke=\"black\" stroke-width=\"2\" fill=\"white\" />\n    \t<text font-size=\"22\" id=\"diagramtext\" x=\"400\" y=\"25\" oryx:align=\"top center\" stroke=\"#373e48\"></text>\n  </g>\n</svg>",
+    "icon" : "diagram.png",
+    "groups" : [ "Diagram" ],
+    "mayBeRoot" : true,
+    "hide" : true,
+    "propertyPackages" :
+      [
+        "process_def_idpackage",
+        "process_def_namepackage",
+        "documentationpackage"
+      ],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ ]
+  }, {
+    "type" : "node",
+    "id" : "StartNoneEvent",
+    "title" : "开始",
+    "description" : "启动流程",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:oryx=\"http://www.b3mn.org/oryx\"\n   width=\"40\"\n   height=\"40\"\n   version=\"1.0\">\n  <defs></defs>\n  <oryx:magnets>\n  \t<oryx:magnet oryx:cx=\"16\" oryx:cy=\"16\" oryx:default=\"yes\" />\n  </oryx:magnets>\n  <g pointer-events=\"fill\">\n    <circle id=\"bg_frame\" cx=\"16\" cy=\"16\" r=\"15\" stroke=\"#585858\" fill=\"#ffffff\" stroke-width=\"1\"/>\n\t<text font-size=\"11\" \n\t\tid=\"text_name\" \n\t\tx=\"16\" y=\"33\" \n\t\toryx:align=\"top center\" \n\t\tstroke=\"#373e48\"\n\t></text>\n  </g>\n</svg>",
+    "icon" : "startevent/none.png",
+    "groups" : [ "启动阀" ],
+    "propertyPackages" : [ "overrideidpackage", "namepackage","custom_combox_def_startnonestartlistener_package"],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ "sequence_start", "Startevents_all", "StartEventsMorph", "all" ]
+  } ,{
+    "type" : "node",
+    "id" : "UserTask",
+    "title" : "用户任务",
+    "description" : "用户任务",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns:oryx=\"http://www.b3mn.org/oryx\"\n   xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n\n   width=\"102\"\n   height=\"82\"\n   version=\"1.0\">\n  <defs></defs>\n  <oryx:magnets>\n  \t<oryx:magnet oryx:cx=\"1\" oryx:cy=\"20\" oryx:anchors=\"left\" />\n  \t<oryx:magnet oryx:cx=\"1\" oryx:cy=\"40\" oryx:anchors=\"left\" />\n  \t<oryx:magnet oryx:cx=\"1\" oryx:cy=\"60\" oryx:anchors=\"left\" />\n  \t\n  \t<oryx:magnet oryx:cx=\"25\" oryx:cy=\"79\" oryx:anchors=\"bottom\" />\n  \t<oryx:magnet oryx:cx=\"50\" oryx:cy=\"79\" oryx:anchors=\"bottom\" />\n  \t<oryx:magnet oryx:cx=\"75\" oryx:cy=\"79\" oryx:anchors=\"bottom\" />\n  \t\n  \t<oryx:magnet oryx:cx=\"99\" oryx:cy=\"20\" oryx:anchors=\"right\" />\n  \t<oryx:magnet oryx:cx=\"99\" oryx:cy=\"40\" oryx:anchors=\"right\" />\n  \t<oryx:magnet oryx:cx=\"99\" oryx:cy=\"60\" oryx:anchors=\"right\" />\n  \t\n  \t<oryx:magnet oryx:cx=\"25\" oryx:cy=\"1\" oryx:anchors=\"top\" />\n  \t<oryx:magnet oryx:cx=\"50\" oryx:cy=\"1\" oryx:anchors=\"top\" />\n  \t<oryx:magnet oryx:cx=\"75\" oryx:cy=\"1\" oryx:anchors=\"top\" />\n  \t\n  \t<oryx:magnet oryx:cx=\"50\" oryx:cy=\"40\" oryx:default=\"yes\" />\n  </oryx:magnets>\n  <g pointer-events=\"fill\" oryx:minimumSize=\"50 40\">\n\t<rect id=\"text_frame\" oryx:anchors=\"bottom top right left\" x=\"1\" y=\"1\" width=\"94\" height=\"79\" rx=\"10\" ry=\"10\" stroke=\"none\" stroke-width=\"0\" fill=\"none\" />\n\t<rect id=\"bg_frame\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"100\" height=\"80\" rx=\"10\" ry=\"10\" stroke=\"#bbbbbb\" stroke-width=\"1\" fill=\"#f9f9f9\" />\n\t\t<text \n\t\t\tfont-size=\"12\" \n\t\t\tid=\"text_name\" \n\t\t\tx=\"50\" \n\t\t\ty=\"40\" \n\t\t\toryx:align=\"middle center\"\n\t\t\toryx:fittoelem=\"text_frame\"\n\t\t\tstroke=\"#373e48\">\n\t\t</text>\n\t\n\t<g id=\"userTask\" transform=\"translate(3,3)\">\n\t\t<path oryx:anchors=\"top left\"\n       \t\tstyle=\"fill:#d1b575;stroke:none;\"\n       \t\t d=\"m 1,17 16,0 0,-1.7778 -5.333332,-3.5555 0,-1.7778 c 1.244444,0 1.244444,-2.3111 1.244444,-2.3111 l 0,-3.0222 C 12.555557,0.8221 9.0000001,1.0001 9.0000001,1.0001 c 0,0 -3.5555556,-0.178 -3.9111111,3.5555 l 0,3.0222 c 0,0 0,2.3111 1.2444443,2.3111 l 0,1.7778 L 1,15.2222 1,17 17,17\" \n         />\n\t\t\n\t</g>\n  \n\t<g id=\"parallel\">\n\t\t<path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"#bbbbbb\" d=\"M46 70 v8 M50 70 v8 M54 70 v8\" stroke-width=\"2\" />\n\t</g>\n\t\n\t<g id=\"sequential\">\n\t\t<path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"#bbbbbb\" stroke-width=\"2\" d=\"M46,76h10M46,72h10 M46,68h10\"/>\n\t</g>\n\t\n\n\t</g>\n</svg>",
+    "icon" : "activity/list/type.user.png",
+    "groups" : [ "活动节点" ],
+    "propertyPackages" :
+      [
+        "overrideidpackage",
+        "namepackage",
+        "custom_combox_def_reflecttype_package",
+        "custom_combox_def_signtype_package",
+        "custom_popup_def_organname_package",
+        "custom_combox_def_votetype_package",
+        "custom_popup_def_rolename_package",
+        "custom_combox_def_backrule_package",
+        "custom_popup_def_username_package",
+        "custom_combox_def_permitdelegate_package",
+        "custom_combox_def_taskstartlistener_package",
+        "custom_combox_def_taskendlistener_package",
+        "custom_combox_def_sign_assignees_package",
+        "custom_combox_def_sign_completed_condition_package",
+        "custom_combox_def_sign_variable_package",
+        "custom_popup_def_organcode_package",
+        "custom_popup_def_rolecode_package",
+        "custom_popup_def_userid_package"
+      ],
+    "hiddenPropertyPackages" :[],
+    "roles" : [ "Activity", "sequence_start", "sequence_end", "ActivitiesMorph", "all" ]
+  },  {
+    "type" : "node",
+    "id" : "ExclusiveGateway",
+    "title" : "分支决策",
+    "description" : "分支决策",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns:oryx=\"http://www.b3mn.org/oryx\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   version=\"1.0\"\n   width=\"40\"\n   height=\"40\">\n  <defs\n     id=\"defs4\" />\n  <oryx:magnets>\n    <oryx:magnet\n       oryx:default=\"yes\"\n       oryx:cy=\"16\"\n       oryx:cx=\"16\" />\n  </oryx:magnets>\t\t\t\t\t\n  <g>\n  \n    <path\n       d=\"M -4.5,16 L 16,-4.5 L 35.5,16 L 16,35.5z\"\n       id=\"bg_frame\"\n       fill=\"#ffffff\"\n       stroke=\"#585858\"\n       style=\"stroke-width:1\" />\n    <g\n       id=\"cross\">\n      <path\n      \tid=\"crosspath\"\n      \tstroke=\"#585858\"\n      \tfill=\"#585858\"\n        d=\"M 8.75,7.55 L 12.75,7.55 L 23.15,24.45 L 19.25,24.45 z\"\n        style=\"stroke-width:1\" />\n      <path\n      \tid=\"crosspath2\"\n      \tstroke=\"#585858\"\n      \tfill=\"#585858\"\n        d=\"M 8.75,24.45 L 19.25,7.55 L 23.15,7.55 L 12.75,24.45 z\"\n        style=\"stroke-width:1\" />\n    </g>\n\t\n\t<text id=\"text_name\" x=\"26\" y=\"26\" oryx:align=\"left top\"/>\n\t\n  </g>\n</svg>\n",
+    "icon" : "gateway/exclusive.databased.png",
+    "groups" : [ "分支决策" ],
+    "propertyPackages" : [
+      "overrideidpackage",
+      "namepackage",
+      "custom_combox_def_gatewaystartlistener_package",
+      "custom_combox_def_gatewayendlistener_package"
+    ],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ "sequence_start", "GatewaysMorph", "sequence_end", "all" ]
+  }, {
+    "type" : "node",
+    "id" : "EndNoneEvent",
+    "title" : "结束",
+    "description" : "流程结束",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:oryx=\"http://www.b3mn.org/oryx\"\n   width=\"40\"\n   height=\"40\"\n   version=\"1.0\">\n  <defs></defs>\n  <oryx:magnets>\n  \t<oryx:magnet oryx:cx=\"16\" oryx:cy=\"16\" oryx:default=\"yes\" />\n  </oryx:magnets>\n  <g pointer-events=\"fill\">\n    <circle id=\"bg_frame\" cx=\"16\" cy=\"16\" r=\"14\" stroke=\"#585858\" fill=\"#ffffff\" stroke-width=\"3\"/>\n\t<text font-size=\"11\" \n\t\tid=\"text_name\" \n\t\tx=\"16\" y=\"32\" \n\t\toryx:align=\"top center\" \n\t\tstroke=\"#373e48\"\n\t></text>\n  </g>\n</svg>",
+    "icon" : "endevent/none.png",
+    "groups" : [ "结束阀" ],
+    "propertyPackages" : [ "overrideidpackage", "namepackage","custom_combox_def_startnonestartlistener_package"],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ "EndEventsMorph", "sequence_end", "all" ]
+  }, {
+    "type" : "edge",
+    "id" : "SequenceFlow",
+    "title" : "分支路由",
+    "description" : "分支路由",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg\r\n\txmlns=\"http://www.w3.org/2000/svg\"\r\n\txmlns:oryx=\"http://www.b3mn.org/oryx\"\r\n\tversion=\"1.0\"\r\n\toryx:edge=\"edge\" >\r\n\t<defs>\r\n\t  \t<marker id=\"start\" refX=\"1\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"17\" markerHeight=\"11\" orient=\"auto\">\r\n\t  \t\t<!-- <path id=\"conditional\"   d=\"M 0 6 L 8 1 L 15 5 L 8 9 L 1 5\" fill=\"white\" stroke=\"black\" stroke-width=\"1\" /> -->\r\n\t\t\t<path id=\"default\" d=\"M 5 0 L 11 10\" fill=\"white\" stroke=\"#585858\" stroke-width=\"1\" />\r\n\t  \t</marker>\r\n\t  \t<marker id=\"end\" refX=\"15\" refY=\"6\" markerUnits=\"userSpaceOnUse\" markerWidth=\"15\" markerHeight=\"12\" orient=\"auto\">\r\n\t  \t\t<path id=\"arrowhead\" d=\"M 0 1 L 15 6 L 0 11z\" fill=\"#585858\" stroke=\"#585858\" stroke-linejoin=\"round\" stroke-width=\"2\" />\r\n\t  \t</marker>\r\n\t</defs>\r\n\t<g id=\"edge\">\r\n\t\t<path id=\"bg_frame\" d=\"M10 50 L210 50\" stroke=\"#585858\" fill=\"none\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" marker-start=\"url(#start)\" marker-end=\"url(#end)\" />\r\n\t\t<text id=\"text_name\" x=\"0\" y=\"0\" oryx:edgePosition=\"startTop\"/>\r\n\t</g>\r\n</svg>",
+    "icon" : "connector/sequenceflow.png",
+    "groups" : [ "Connecting Objects" ],
+    "layout" : [ {
+      "type" : "layout.bpmn2_0.sequenceflow"
+    } ],
+    "propertyPackages" : [ "overrideidpackage", "namepackage", "conditionsequenceflowpackage", "defaultflowpackage"],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ "ConnectingObjectsMorph", "all" ]
+  }, {
+    "type" : "edge",
+    "id" : "MessageFlow",
+    "title" : "Message flow",
+    "description" : "Message flow to connect elements in different pools.",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg\r\n\txmlns=\"http://www.w3.org/2000/svg\"\r\n\txmlns:oryx=\"http://www.b3mn.org/oryx\"\r\n\tversion=\"1.0\"\r\n\toryx:edge=\"edge\" >\r\n\t<defs>\r\n\t\t<marker id=\"start\" oryx:optional=\"yes\" oryx:enabled=\"yes\" refX=\"5\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto\">\r\n\t  \t\t<!-- <path d=\"M 10 10 L 0 5 L 10 0\" fill=\"none\" stroke=\"#585858\" /> -->\r\n\t  \t\t<circle id=\"arrowhead\" cx=\"5\" cy=\"5\" r=\"5\" fill=\"white\" stroke=\"black\" />\r\n\t  \t</marker>\r\n\r\n\t  \t<marker id=\"end\" refX=\"10\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto\">\r\n\t  \t\t<path id=\"arrowhead2\" d=\"M 0 0 L 10 5 L 0 10 L 0 0\" fill=\"white\" stroke=\"#585858\" />\r\n\t  \t</marker>\r\n\t</defs>\r\n\t<g id=\"edge\">\r\n\t    <path id=\"bg_frame\" d=\"M10 50 L210 50\" stroke=\"#585858\" fill=\"none\" stroke-width=\"2\" stroke-dasharray=\"3, 4\" marker-start=\"url(#start)\" marker-end=\"url(#end)\" />\r\n\t\t<text id=\"text_name\" x=\"0\" y=\"0\" oryx:edgePosition=\"midTop\"/>\r\n\t</g>\r\n</svg>",
+    "icon" : "connector/messageflow.png",
+    "groups" : [ "Connecting Objects" ],
+    "layout" : [ {
+      "type" : "layout.bpmn2_0.sequenceflow"
+    } ],
+    "propertyPackages" : [ "overrideidpackage", "namepackage", "documentationpackage" ],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ "ConnectingObjectsMorph", "all" ]
+  }, {
+    "type" : "edge",
+    "id" : "DataAssociation",
+    "title" : "DataAssociation",
+    "description" : "Associates a data element with an activity.",
+    "view" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<svg\r\n\txmlns=\"http://www.w3.org/2000/svg\"\r\n\txmlns:oryx=\"http://www.b3mn.org/oryx\"\r\n\tversion=\"1.0\"\r\n\toryx:edge=\"edge\" >\r\n\t<defs>\r\n\t  \t<marker id=\"end\" refX=\"10\" refY=\"5\" markerUnits=\"userSpaceOnUse\" markerWidth=\"10\" markerHeight=\"10\" orient=\"auto\">\r\n\t  \t\t<path id=\"arrowhead\" d=\"M 0 0 L 10 5 L 0 10\" fill=\"none\" stroke=\"#585858\" />\r\n\t  \t</marker>\r\n\t</defs>\r\n\t<g id=\"edge\">\r\n\t    <path id=\"bg_frame\" d=\"M10 50 L210 50\" stroke=\"#585858\" fill=\"none\" stroke-width=\"2\" stroke-dasharray=\"3, 4\" marker-end=\"url(#end)\" />\r\n\t\t<text id=\"name\" x=\"0\" y=\"0\" oryx:edgePosition=\"midTop\" oryx:offsetTop=\"6\" style=\"font-size:9px;\"/>\r\n\t</g>\r\n</svg>",
+    "icon" : "connector/association.unidirectional.png",
+    "groups" : [ "Connecting Objects" ],
+    "layout" : [ {
+      "type" : "layout.bpmn2_0.sequenceflow"
+    } ],
+    "propertyPackages" : [ "overrideidpackage", "namepackage", "documentationpackage" ],
+    "hiddenPropertyPackages" : [ ],
+    "roles" : [ "ConnectingObjectsMorph", "all" ]
+  } ],
+  "rules" : {
+    "cardinalityRules" : [ {
+      "role" : "Startevents_all",
+      "incomingEdges" : [ {
+        "role" : "SequenceFlow",
+        "maximum" : 0
+      } ]
+    }, {
+      "role" : "Endevents_all",
+      "outgoingEdges" : [ {
+        "role" : "SequenceFlow",
+        "maximum" : 0
+      } ]
+    } ],
+    "connectionRules" : [ {
+      "role" : "SequenceFlow",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "sequence_end" ]
+      } ]
+    }, {
+      "role" : "Association",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "TextAnnotation" ]
+      }, {
+        "from" : "sequence_end",
+        "to" : [ "TextAnnotation" ]
+      }, {
+        "from" : "TextAnnotation",
+        "to" : [ "sequence_end" ]
+      }, {
+        "from" : "TextAnnotation",
+        "to" : [ "sequence_start" ]
+      } ]
+    }, {
+      "role" : "DataAssociation",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "DataStore" ]
+      }, {
+        "from" : "sequence_end",
+        "to" : [ "DataStore" ]
+      }, {
+        "from" : "DataStore",
+        "to" : [ "sequence_end" ]
+      }, {
+        "from" : "DataStore",
+        "to" : [ "sequence_start" ]
+      } ]
+    }, {
+      "role" : "IntermediateEventOnActivityBoundary",
+      "connects" : [ {
+        "from" : "Activity",
+        "to" : [ "IntermediateEventOnActivityBoundary" ]
+      } ]
+    } ],
+    "containmentRules" : [ {
+      "role" : "BPMNDiagram",
+      "contains" : [ "all" ]
+    }, {
+      "role" : "SubProcess",
+      "contains" : [ "sequence_start", "sequence_end", "from_task_event", "to_task_event", "EventSubprocess", "TextAnnotation" ]
+    }, {
+      "role" : "EventSubProcess",
+      "contains" : [ "sequence_start", "sequence_end", "from_task_event", "to_task_event", "TextAnnotation" ]
+    }, {
+      "role" : "Pool",
+      "contains" : [ "Lane" ]
+    }, {
+      "role" : "Lane",
+      "contains" : [ "sequence_start", "sequence_end", "EventSubprocess", "TextAnnotation", "DataStore" ]
+    } ],
+    "morphingRules" : [ {
+      "role" : "ActivitiesMorph",
+      "baseMorphs" : [ "UserTask" ],
+      "preserveBounds" : true
+    }, {
+      "role" : "GatewaysMorph",
+      "baseMorphs" : [ "ExclusiveGateway" ]
+    }, {
+      "role" : "StartEventsMorph",
+      "baseMorphs" : [ "StartNoneEvent" ]
+    }, {
+      "role" : "EndEventsMorph",
+      "baseMorphs" : [ "StartNoneEvent" ]
+    }, {
+      "role" : "CatchEventsMorph",
+      "baseMorphs" : [ "CatchTimerEvent" ]
+    }, {
+      "role" : "ThrowEventsMorph",
+      "baseMorphs" : [ "ThrowNoneEvent" ]
+    }, {
+      "role" : "TextAnnotation",
+      "baseMorphs" : [ "TextAnnotation" ]
+    }, {
+      "role" : "DataStore",
+      "baseMorphs" : [ "DataStore" ]
+    } ]
+  }
+}

@@ -1,0 +1,64 @@
+<div class="modal" ng-controller="SaveModelCtrl">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4> &nbsp;确认流程定义提示</h4>
+            </div>
+            <div style="margin: 15px 18px 0px 4px">
+                <table border="0" width="100%" s>
+                    <tr>
+                        <td width="30%" align="right" valign="middle">
+                            <label style="font-size:14px"><b>流程编号：</b></label>
+                        </td>
+                        <td>
+                            <label style="font-size:14px">{{saveDialog.processId}}</label>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%" align="right" valign="middle">
+                            <label style="font-size:14px"><b>流程名称：</b></label>
+                        </td>
+                        <td>
+                            <label style="font-size:14px">{{saveDialog.name}}</label>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table border="0" width="100%" s>
+                                <tr>
+                                    <td width="30px">
+                                        &nbsp;
+                                    </td>
+                                    <td width="58%">
+                                        <div style="margin:12px 0px 12px 12px">
+                                            <div class="pull-right popup-error" ng-if="error && !error.isConflict">
+                                                <span>{{error}}</span>
+                                            </div>
+                                            <div class="pull-right popup-success"
+                                                 ng-if="success && !success.isConflict">
+                                                <span>{{success}}</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="30%" align="right">
+                                        <div style="margin-top: 12px;margin-bottom: 12px">
+                                            <button type="button" class="btn" ng-click="close()"
+                                                    ng-disabled="status.loading" translate>
+                                                ACTION.CANCEL
+                                            </button>
+                                            &nbsp;
+                                            <button class="btn btn-primary" ng-click="saveOrDeploy(1)"
+                                                    ng-disabled="status.loading"
+                                                    ng-show="!error" translate>ACTION.SAVE
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
