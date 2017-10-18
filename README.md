@@ -1182,4 +1182,4 @@ com.vprisk.workflow.core.NodeVariableService
 
 ## 6.交流及反馈
 
-如有疑惑，可以邮件交流，**killer_duan@vprisk.com**。 ：)
+如有疑惑，可以邮件交流，**zhijund@163.com**。 ：)
