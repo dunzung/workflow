@@ -1006,6 +1006,7 @@ com.vprisk.workflow.core.ProcessDefinitionService
 	ProcessDefinitionDto processDefinitionDto = ...;
     processDefinitionService.copyProcessDefinition(processDefinitionDto);
 
+
 ##### 4.1.4 流程参数接口
 
 	com.vprisk.workflow.core.VariableService
@@ -1028,27 +1029,24 @@ com.vprisk.workflow.core.ProcessDefinitionService
 
 **设置流程实例或任务实例共有参数**
 
-@Transactional
-
+    @Transactional
     public Object setVariable(String tartgetId，String variableName) 
 
 **设置流程实例或任务实例私有参数**
 
-@Transactional
-
+    @Transactional
     public Object setVariableLocal(String tartgetId，String variableName) 
 
 **删除流程实例或任务实例私有参数**
 
-@Transactional
-
+    @Transactional
     public Object removeVariableLocal(String tartgetId，String variableName) 
 
 **删除流程实例或任务实例共有参数**
 
-@Transactional
-
+    @Transactional
     public Object removeVariable(String tartgetId，String variableName) 
+
 
 ##4.2 历史查询服务接口
 
@@ -1082,9 +1080,10 @@ com.vprisk.workflow.core.HistoricTaskInstanceService
 
 **4.2.1.1 查询流程参数**
 
-	Strubg processInstanceId = ...;
+    String processInstanceId = ...;
     Map<String, Object> map = historicTaskInstanceService.getVariablesByProcessInstanceId(processInstanceId);
 	
+
 ###4.2.2 历史流程实例服务接口
 
 com.vprisk.workflow.core.HistoricProcessInstanceService 
@@ -1096,10 +1095,12 @@ com.vprisk.workflow.core.HistoricProcessInstanceService
 	@Autowired
 	public HistoricProcessInstanceService historicProcessInstanceService;
 
+
 **4.2.2.1 查询指定流程实例详细**
 
 	Strubg processInstanceId = ...;
     ProcessInstanceDto dto = historicProcessInstanceService.findProcessInstanceById(processInstanceId);
+
 
 **4.2.2.1 分页查询流程实例**
 
@@ -1110,6 +1111,7 @@ com.vprisk.workflow.core.HistoricProcessInstanceService
 	params.put("status", "")
 
     Page<WorkflowTableDto> page = historicProcessInstanceService.pageProcess(pageable，params);
+
 
 ## 4.3 扩展服务接口
 
@@ -1124,6 +1126,7 @@ com.vprisk.workflow.core.ListenerService
 	@Autowired
 	public ListenerService listenerService;
 
+
 ###4.3.2 流程参与人服务接口 ###
 
 com.vprisk.workflow.core.ParticipantService
@@ -1133,6 +1136,7 @@ com.vprisk.workflow.core.ParticipantService
 	@Autowired
 	public ParticipantService participantService;  
 	
+
 ###4.3.3 历史任务扩展服务接口 ###
 
 com.vprisk.workflow.core.TaskHistoryService 
@@ -1143,6 +1147,7 @@ com.vprisk.workflow.core.TaskHistoryService
 
 	@Autowired
 	public TaskHistoryService taskHistoryService;
+
 
 ###4.3.4 流程代理服务接口 ###
 
@@ -1155,6 +1160,7 @@ com.vprisk.workflow.core.ProcessAgentService
 
 	@Autowired
 	public ProcessAgentService processAgentService;
+
 
 ###4.3.5 任务定义扩展服务接口 ###
  
