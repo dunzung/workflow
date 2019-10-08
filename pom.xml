@@ -455,7 +455,7 @@
         <velocity-tools>2.0</velocity-tools>
         <jackson>2.5.0-rc1</jackson>
         <jaxen>1.1.4</jaxen>
-        <c3p0>0.9.5-pre6</c3p0>
+        <c3p0>0.9.5.4</c3p0>
         <commons-dbcp>1.4</commons-dbcp>
         <commons-lang3>3.3.2</commons-lang3>
         <ehcache>2.9.0</ehcache>
