@@ -1,6 +1,6 @@
 基于Activiti5 定制化中国式工作流系统
 ##QQ技术交流群:838850873
-![]https://github.com/dunzung/assets/blob/master/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81%E7%BE%A4%E8%81%8A%E4%BA%8C%E7%BB%B4%E7%A0%81.png
+![]https://github.com/dunzung/assets/blob/master/qqcode.png
 
 ##工作流开发手册_*V3.0*
 	作者 段志军 2016-01-18
