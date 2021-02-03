@@ -462,7 +462,7 @@
         <commons-beanutils>1.9.2</commons-beanutils>
         <commons-codec>1.9</commons-codec>
         <commons.io>2.4</commons.io>
-        <ant>1.7.0</ant>
+        <ant>1.10.9</ant>
         <standard>1.1.2</standard>
         <jstl>1.1.2</jstl>
         <jsp>2.1</jsp>
