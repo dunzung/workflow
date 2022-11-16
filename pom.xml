@@ -453,7 +453,7 @@
         <hibernate>3.6.10.Final</hibernate>
         <json-lib>2.4</json-lib>
         <velocity-tools>2.0</velocity-tools>
-        <jackson>2.5.0-rc1</jackson>
+        <jackson>2.12.7.1</jackson>
         <jaxen>1.1.4</jaxen>
         <c3p0>0.9.5-pre6</c3p0>
         <commons-dbcp>1.4</commons-dbcp>
