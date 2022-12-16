@@ -445,7 +445,7 @@
 
     <properties>
         <workflow.activiti>5.18.0</workflow.activiti>
-        <spring>4.1.4.RELEASE</spring>
+        <spring>5.2.20.RELEASE</spring>
         <spring-data-jpa>1.5.0.RELEASE</spring-data-jpa>
         <spring-security>3.2.5.RELEASE</spring-security>
         <aspectj>1.6.10</aspectj>
